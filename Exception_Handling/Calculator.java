@@ -19,7 +19,7 @@ try {
     System.out.println("Result : " + result);
 } catch (ArithmeticException exception)  {
 
-    System.out.println("Divide by zero , enter valid values");
+    System.out.printf( "%s, enter valid values", exception.getMessage());
 }
 
 

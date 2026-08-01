@@ -46,7 +46,7 @@ public class ExceptionStac {
 
             // पूर्ण Exception Stack Trace
             e.printStackTrace();
-        } finally{
+        } finally{ // he chalanar manje chalanar exception yeu naytr nay tari ha block run hoto yala finally mhantat
             System.out.println("I am in finally");
         }
 

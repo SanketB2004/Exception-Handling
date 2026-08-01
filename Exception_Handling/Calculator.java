@@ -40,18 +40,17 @@ public class Calculator {
 // }
 
 
+a();
 
 
-
-
- checkAge(sc.nextInt()); // this is method call  
+//  checkAge(sc.nextInt()); // this is method call  
 
 
 
 
  
 }
-static void checkAge(int age) {
+ static void checkAge(int age) {
 
     if (age < 18) {
         throw new RuntimeException("Age is less than 18");
@@ -61,4 +60,51 @@ static void checkAge(int age) {
 }
 
 
+
+    private static void a() {
+        b();
+    }
+
+    private static void b() {
+        c();
+    }
+
+    private static void c() {
+        d();
+    }
+
+    private static void d() {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Welcome to Division Calculator");
+        System.out.println("Please enter your numbers");
+
+        int first = sc.nextInt();
+        int second = sc.nextInt();
+
+        try {
+
+            int result = first / second;
+
+            System.out.println("Result : " + result);
+
+        } catch (ArithmeticException e) {
+
+            System.out.println("Exception Message: " + e.getMessage());
+            System.out.println("Please enter valid values.");
+
+        } catch (Exception e) {
+
+            System.out.println("General Exception: " + e.getMessage());
+
+        } finally {
+
+            sc.close();
+        }
+    }
+
 }
+ 
+    
+

@@ -44,7 +44,8 @@ public class Calculator {
 
 
 
- checkAge(sc.nextInt());
+ checkAge(sc.nextInt()); // this is method call  
+
 
 
 
@@ -58,4 +59,6 @@ static void checkAge(int age) {
 
     System.out.println("You are eligible");
 }
+
+
 }

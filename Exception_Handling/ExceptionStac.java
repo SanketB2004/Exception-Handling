@@ -1,4 +1,8 @@
-package Exception_Handling;
+package Exception_Handling;  
+// use for a exception stack 
+
+// this used a finnaly block keyword 
+
 
 import java.util.Scanner;
 
@@ -42,6 +46,8 @@ public class ExceptionStac {
 
             // पूर्ण Exception Stack Trace
             e.printStackTrace();
+        } finally{
+            System.out.println("I am in finally");
         }
 
         sc.close();

@@ -11,10 +11,9 @@ public class filehandling {
 
             // this is write jay shree ram name ten thousand times 
 
-            for (int i = 0; i < 10000; i++) {
+            for (int i = 0; i < 10; i++) {
                 writer.write("Jay Shree ram\n ");
             }
-            
         
 
             writer.write("This is Java course");

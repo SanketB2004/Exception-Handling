@@ -7,9 +7,9 @@ public class filehandling {
 
         String fileName = "Java-Course.txt";
 
-        try {
+        try (FileWriter writer = new FileWriter(fileName);) {
 
-            FileWriter writer = new FileWriter(fileName);
+        
 
             writer.write("This is Java course");
 
@@ -21,6 +21,7 @@ public class filehandling {
         } catch (IOException e) {
 
             System.out.println("Error Occurred: " + e.getMessage());
+        } 
+            
         }
     }
-}
